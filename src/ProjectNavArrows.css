@@ -1,0 +1,40 @@
+.navigation-arrows {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+    left: 20px; /* Position the arrows to the left */
+  }
+  
+  .next-button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px;
+    margin-left: auto; /* Align right by pushing it to the right */
+    cursor: pointer;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+  }
+  
+  .prev-button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px;
+    margin-right: 5px;
+    cursor: pointer;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+  }
+  
+  .prev-button:disabled,
+  .next-button:disabled {
+    background-color: #cccccc;
+    cursor: not-allowed;
+  }
+  
+  .prev-button:focus,
+  .next-button:focus {
+    outline: none;
+  }
